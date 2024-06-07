@@ -30,8 +30,8 @@ func addPerson(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	mutex.Lock()
-	defer mutex.Unlock()
+	/*mutex.Lock()
+	defer mutex.Unlock()*/
 
 	people, err := loadPeople()
 
